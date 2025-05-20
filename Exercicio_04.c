@@ -10,12 +10,15 @@ menor e o maior número do vetor.*/
 
 int main(int argc, char const *argv[])
 {
-    int numeros[10] = {5151, 6156, 111, 1115, 21558, 54851, 963852, 741, 52, 12548961};
+    int numeros[10];
     int numMaior = 0;
     int numMenor = 9999999999;
 
     for (size_t i = 0; i < 10; i++)
     {
+        printf("Digite o º%d numero: ");
+        scanf("%d", &numeros[i]);
+
         if (numeros[i] > numMaior)
         {
             numMaior = numeros[i];
